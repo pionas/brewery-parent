@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>pl.excellent-app.brewery.boot</groupId>
+    <groupId>pl.excellentapp.brewery.boot</groupId>
     <artifactId>brewery-parent</artifactId>
     <version>1.0</version>
 
