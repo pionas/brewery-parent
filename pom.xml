@@ -42,7 +42,6 @@
         <liquibase-core.version>4.31.0</liquibase-core.version>
         <lombok.version>1.18.36</lombok.version>
         <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
-        <spring-statemachine-core.artifactId>4.0.0</spring-statemachine-core.artifactId>
         <pitest-maven.version>1.17.4</pitest-maven.version>
         <pitest-junit5-plugin.version>1.2.1</pitest-junit5-plugin.version>
         <pitest-maven.analyseLastCommit>false</pitest-maven.analyseLastCommit>
@@ -52,7 +51,6 @@
         <docker.image.name>${project.artifactId}</docker.image.name>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
         <spring-cloud-starter-zipkin.version>2.2.8.RELEASE</spring-cloud-starter-zipkin.version>
-        <spring-cloud-starter-sleuth.version>3.1.11</spring-cloud-starter-sleuth.version>
     </properties>
 
     <developers>
@@ -81,15 +79,6 @@
                 <version>${liquibase-core.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.mapstruct</groupId>
-                <artifactId>mapstruct</artifactId>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.statemachine</groupId>
-                <artifactId>spring-statemachine-core</artifactId>
-                <version>${spring-statemachine-core.artifactId}</version>
-            </dependency>
-            <dependency>
                 <groupId>jakarta.validation</groupId>
                 <artifactId>jakarta.validation-api</artifactId>
             </dependency>
@@ -99,7 +88,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <dependencies>
         <!-- external dependencies -->
@@ -117,11 +105,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
