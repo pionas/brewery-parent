@@ -44,7 +44,7 @@
         <pitest-maven.analyseLastCommit>false</pitest-maven.analyseLastCommit>
         <logstash-logback-encoder.version>8.0</logstash-logback-encoder.version>
         <docker-maven-plugin.version>0.45.1</docker-maven-plugin.version>
-        <docker.image.prefix>excellentapp-</docker.image.prefix>
+        <docker.image.prefix>brewery</docker.image.prefix>
         <docker.image.name>${project.artifactId}</docker.image.name>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
     </properties>
